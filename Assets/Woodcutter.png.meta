@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 636d4d7bfd3db8845aabb41ca760a900
+guid: 24c41b72254fa3d4d8314dc32c2a4f75
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5318393343564051568
-    second: Camp fire_0
-  - first:
-      213: -6426305629053061589
-    second: Camp fire_1
-  - first:
-      213: -880599646241549661
-    second: Camp fire_2
+      213: -3849791415587609186
+    second: Woodcutter_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -57,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 650
+  spritePixelsToUnits: 6
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -119,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Camp fire_0
+      name: Woodcutter_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 4640
-        height: 8000
+        width: 28
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 074ffe2619abec940800000000000000
-      internalID: 5318393343564051568
+      spriteID: e956d86ca1bc29ac0800000000000000
+      internalID: -3849791415587609186
       vertices: []
       indices: 
       edges: []
@@ -144,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: f694e7f2190f2c24ca884004514acb80
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -152,11 +146,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":4640.0,"y":8000.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      Camp fire_0: 5318393343564051568
+      Woodcutter_0: -3849791415587609186
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
