@@ -6,10 +6,12 @@ public class McMove : MonoBehaviour
 {
     public Rigidbody2D MyRigidBody;
     public float MoveFactor = 5;
+    private Animator anim;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        anim = GetComponent<Animator>();
 
     }
 
@@ -34,6 +36,17 @@ public class McMove : MonoBehaviour
         {
             movement += Vector2.right;
         }
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            anim.SetBool("IsAttacking", true);
+        }
+        if (Input.GetKeyUp(KeyCode.Mouse0))
+        {
+            anim.SetBool("IsAttacking", false);
+        }
+        anim.SetBool("IsWalking", movement != Vector2.zero);
+            
+
 
         // Normalise so diagonal movement isn't faster
         movement = movement.normalized;
