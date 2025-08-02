@@ -7,14 +7,15 @@ public class McMove : MonoBehaviour
     public Rigidbody2D MyRigidBody;
     public float MoveFactor = 5;
     private Animator anim;
-
+    private bool IsFacingRight;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        IsFacingRight = true;
         anim = GetComponent<Animator>();
-
+  
     }
-
+ 
     // Update is called once per frame
     void Update()
     {
@@ -45,8 +46,14 @@ public class McMove : MonoBehaviour
             anim.SetBool("IsAttacking", false);
         }
         anim.SetBool("IsWalking", movement != Vector2.zero);
-            
-
+        if (!IsFacingRight && movement == Vector2.right)
+        {
+            Flip();
+        }
+        else if (IsFacingRight && movement == Vector2.left)
+        {
+            Flip();
+        }
 
         // Normalise so diagonal movement isn't faster
         movement = movement.normalized;
@@ -54,4 +61,13 @@ public class McMove : MonoBehaviour
         // Apply velocity
         MyRigidBody.linearVelocity = movement * MoveFactor;
     }
+    public void Flip()
+    {
+        IsFacingRight = !IsFacingRight;
+        Vector3 localscale = transform.localScale;
+        localscale.x *= -1f;
+        transform.localScale = localscale;
+    }
+
 }
+
